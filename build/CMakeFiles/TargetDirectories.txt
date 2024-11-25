@@ -1,0 +1,3 @@
+/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles/projet_cpp.dir
+/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles/edit_cache.dir
+/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles/rebuild_cache.dir
