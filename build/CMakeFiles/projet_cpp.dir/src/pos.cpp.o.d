@@ -1,7 +1,7 @@
-CMakeFiles/projet_cpp.dir/src/main.cpp.o: \
- /home/ghita/Documents/C++/projet_cpp/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/proj.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+CMakeFiles/projet_cpp.dir/src/pos.cpp.o: \
+ /home/ghita/Documents/C++/projet_cpp/src/pos.cpp \
+ /usr/include/stdc-predef.h \
+ /home/ghita/Documents/C++/projet_cpp/src/pos.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -21,6 +21,7 @@ CMakeFiles/projet_cpp.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
@@ -146,9 +147,4 @@ CMakeFiles/projet_cpp.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/fstream \
- /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc \
- /home/ghita/Documents/C++/projet_cpp/src/pos.h
+ /usr/include/c++/11/bits/istream.tcc /usr/include/proj.h

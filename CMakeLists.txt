@@ -21,7 +21,7 @@ set(SOURCE_FILES
 )
 
 # Création de l'exécutable
-add_executable(projet_cpp ${SOURCE_FILES})
+add_executable(projet_cpp src/main.cpp src/pos.cpp ${SOURCE_FILES})
 
 # Lier l'exécutable avec la bibliothèque PROJ
 target_link_libraries(projet_cpp ${PROJ_LIBRARIES})

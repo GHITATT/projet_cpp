@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/pos.o: src/pos.cpp.o
+.PHONY : src/pos.o
+
+# target to build an object file
+src/pos.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/pos.cpp.o
+.PHONY : src/pos.cpp.o
+
+src/pos.i: src/pos.cpp.i
+.PHONY : src/pos.i
+
+# target to preprocess a source file
+src/pos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/pos.cpp.i
+.PHONY : src/pos.cpp.i
+
+src/pos.s: src/pos.cpp.s
+.PHONY : src/pos.s
+
+# target to generate assembly for a file
+src/pos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/pos.cpp.s
+.PHONY : src/pos.cpp.s
+
 src/vibes.o: src/vibes.cpp.o
 .PHONY : src/vibes.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pos.o"
+	@echo "... src/pos.i"
+	@echo "... src/pos.s"
 	@echo "... src/vibes.o"
 	@echo "... src/vibes.i"
 	@echo "... src/vibes.s"
