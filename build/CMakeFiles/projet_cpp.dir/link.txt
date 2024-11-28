@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -Wextra -g CMakeFiles/projet_cpp.dir/src/main.cpp.o CMakeFiles/projet_cpp.dir/src/pos.cpp.o CMakeFiles/projet_cpp.dir/src/vibes.cpp.o -o projet_cpp  -lproj 
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/projet_cpp.dir/src/main.cpp.o CMakeFiles/projet_cpp.dir/src/vibes.cpp.o CMakeFiles/projet_cpp.dir/src/pos.cpp.o CMakeFiles/projet_cpp.dir/src/triangle.cpp.o -o projet_cpp  -lproj 

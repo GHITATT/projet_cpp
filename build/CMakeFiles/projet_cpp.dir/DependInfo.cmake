@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ghita/Documents/C++/projet_cpp/src/main.cpp" "CMakeFiles/projet_cpp.dir/src/main.cpp.o" "gcc" "CMakeFiles/projet_cpp.dir/src/main.cpp.o.d"
   "/home/ghita/Documents/C++/projet_cpp/src/pos.cpp" "CMakeFiles/projet_cpp.dir/src/pos.cpp.o" "gcc" "CMakeFiles/projet_cpp.dir/src/pos.cpp.o.d"
+  "/home/ghita/Documents/C++/projet_cpp/src/triangle.cpp" "CMakeFiles/projet_cpp.dir/src/triangle.cpp.o" "gcc" "CMakeFiles/projet_cpp.dir/src/triangle.cpp.o.d"
   "/home/ghita/Documents/C++/projet_cpp/src/vibes.cpp" "CMakeFiles/projet_cpp.dir/src/vibes.cpp.o" "gcc" "CMakeFiles/projet_cpp.dir/src/vibes.cpp.o.d"
   )
 

@@ -177,6 +177,30 @@ src/pos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/pos.cpp.s
 .PHONY : src/pos.cpp.s
 
+src/triangle.o: src/triangle.cpp.o
+.PHONY : src/triangle.o
+
+# target to build an object file
+src/triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/triangle.cpp.o
+.PHONY : src/triangle.cpp.o
+
+src/triangle.i: src/triangle.cpp.i
+.PHONY : src/triangle.i
+
+# target to preprocess a source file
+src/triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/triangle.cpp.i
+.PHONY : src/triangle.cpp.i
+
+src/triangle.s: src/triangle.cpp.s
+.PHONY : src/triangle.s
+
+# target to generate assembly for a file
+src/triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/triangle.cpp.s
+.PHONY : src/triangle.cpp.s
+
 src/vibes.o: src/vibes.cpp.o
 .PHONY : src/vibes.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/pos.o"
 	@echo "... src/pos.i"
 	@echo "... src/pos.s"
+	@echo "... src/triangle.o"
+	@echo "... src/triangle.i"
+	@echo "... src/triangle.s"
 	@echo "... src/vibes.o"
 	@echo "... src/vibes.i"
 	@echo "... src/vibes.s"
