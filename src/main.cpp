@@ -4,89 +4,81 @@
 #include "pos.h"
 #include <vector>
 #include "triangle.h"
+#include "plan.h"
+#include "proj_class.cpp"
 
 using namespace std;
 
 std::string mnt_brest = "src/mnt_brest.txt";
-vector <Pos*> points;
-
-
+std::string mnt_brest_pgm = "src/mnt_brest.pgm";
+vector<Pos*> points;
 
 int read_mnt(std::string& mnt_brest) {
     std::ifstream fin(mnt_brest);
 
-    if (!fin.is_open()){
+    if (!fin.is_open()) {
         cout << "Erreur d’ouverture de " << mnt_brest << endl;
         return 1;
     }
 
+    std::string line;
+    size_t line_count = 0;
 
-    else{
-        for (int i = 0; i < 500; i++){
-            Pos* p = new Pos();
-            fin >> *p;
-            points.push_back(p);
-            delete p;
+    // Lire chaque ligne du fichier
+    while (std::getline(fin, line)) {
+        std::istringstream iss(line);
+        double lat, lon, alt;
+
+        if (!(iss >> lat >> lon >> alt)) {
+            std::cerr << "Erreur de lecture à la ligne " << line_count << std::endl;
+            return 1;
         }
+
+        Pos* p = new Pos(lat, lon, alt);
+        points.push_back(p);
+
+        ++line_count;
+        /*
+        // Limite de test (supprimez cette ligne pour traiter tout le fichier)
+        if (line_count >= 1000) {
+            break;
+        }
+        */
+        
+    
+        
+        
     }
-    cout << "premier proj " << points[0]->_x << points[0]->_y << endl;
+
+    cout << "Lecture terminée : " << line_count << " points lus." << endl;
+
     fin.close();
     return 0;
 }
 
-
-Triangle super_triangle(vector <Pos*> points){
-
-    Pos p1;
-    Pos p2;
-    Pos p3;
-
-    double xmin = points[0]->_x;
-    double xmax = points[0]->_x;
-    double ymin = points[0]->_y;
-    double ymax = points[0]->_y;
-
-    // Recherche des limites du rectangle englobant
-    for (const auto& p : points){
-        if (p->_x < xmin){
-            xmin = p->_x;
-        }
-        if (p->_x > xmax){
-            xmax = p->_x;
-        }
-        if (p->_y < ymin){
-            ymin = p->_y;
-        }
-        if (p->_y > ymax){
-            ymax = p->_y;
-        }
-    }
-    cout << xmin << " " << xmax << " " << ymin << " " << ymax << endl;
-
-    // largeur et hauteur du rectangle
-
-    double width = xmax - xmin;
-    double height = ymax - ymin;
-
-    // Marge 
-    double delta = 10 * max(width, height);
-
-    p1._x = xmin - delta;
-    p1._y = ymin - delta;
-    p1._x = xmax + delta;
-    p2._y = ymin - delta;
-    p3._x = (xmin + xmax) / 2;
-    p3._y = ymax + delta;
-
-    return Triangle(&p1, &p2, &p3);
-}
-
-
 int main() {
-    bool read = read_mnt(mnt_brest);
-    if (read == 1){
+    // Initialisation unique de PROJ
+    try {
+        Proj::initialize();
+    } catch (const std::exception& e) {
+        std::cerr << "Erreur lors de l'initialisation de PROJ : " << e.what() << std::endl;
         return 1;
     }
-    super_triangle(points);
+
+    // Lire les points MNT
+    bool read = read_mnt(mnt_brest);
+    if (read == 1) {
+        Proj::cleanup(); // Nettoyage avant de quitter
+        return 1;
+    }
+
+    // Créer et utiliser l'objet Plan
+    Plan plan(points);
+    plan.compute_triangulation();
+    //plan.draw();
+    plan.generatePGM("mnt_brest.pgm");
+
+    // Nettoyage final de PROJ
+    Proj::cleanup();
     return 0;
 }

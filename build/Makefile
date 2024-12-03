@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/plan.o: src/plan.cpp.o
+.PHONY : src/plan.o
+
+# target to build an object file
+src/plan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/plan.cpp.o
+.PHONY : src/plan.cpp.o
+
+src/plan.i: src/plan.cpp.i
+.PHONY : src/plan.i
+
+# target to preprocess a source file
+src/plan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/plan.cpp.i
+.PHONY : src/plan.cpp.i
+
+src/plan.s: src/plan.cpp.s
+.PHONY : src/plan.s
+
+# target to generate assembly for a file
+src/plan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/plan.cpp.s
+.PHONY : src/plan.cpp.s
+
 src/pos.o: src/pos.cpp.o
 .PHONY : src/pos.o
 
@@ -176,6 +200,30 @@ src/pos.s: src/pos.cpp.s
 src/pos.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/pos.cpp.s
 .PHONY : src/pos.cpp.s
+
+src/proj_class.o: src/proj_class.cpp.o
+.PHONY : src/proj_class.o
+
+# target to build an object file
+src/proj_class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o
+.PHONY : src/proj_class.cpp.o
+
+src/proj_class.i: src/proj_class.cpp.i
+.PHONY : src/proj_class.i
+
+# target to preprocess a source file
+src/proj_class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/proj_class.cpp.i
+.PHONY : src/proj_class.cpp.i
+
+src/proj_class.s: src/proj_class.cpp.s
+.PHONY : src/proj_class.s
+
+# target to generate assembly for a file
+src/proj_class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/proj_class.cpp.s
+.PHONY : src/proj_class.cpp.s
 
 src/triangle.o: src/triangle.cpp.o
 .PHONY : src/triangle.o
@@ -237,9 +285,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/plan.o"
+	@echo "... src/plan.i"
+	@echo "... src/plan.s"
 	@echo "... src/pos.o"
 	@echo "... src/pos.i"
 	@echo "... src/pos.s"
+	@echo "... src/proj_class.o"
+	@echo "... src/proj_class.i"
+	@echo "... src/proj_class.s"
 	@echo "... src/triangle.o"
 	@echo "... src/triangle.i"
 	@echo "... src/triangle.s"

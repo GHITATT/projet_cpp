@@ -2,6 +2,7 @@
 #define __POS_H__
 
 #include <iostream>
+#include <list>
 
 using namespace std;
 
@@ -21,9 +22,16 @@ public:
     double _x;
     double _y;
     double _z;
+/*
+    list<Edge*> _edges;
+
+    void link_to(Pos* p);
+*/
+
 
     friend std::ostream& operator<<(std::ostream& stream, const Pos& p);
     friend std::istream& operator>>(std::istream& stream, Pos& p);
+  
 
 };
 

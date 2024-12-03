@@ -18,6 +18,7 @@ public:
     Pos* _p2;
     Pos* _p3;
 
+
     void calculer_coefficients(); // calculer les coefficients des 2 droites mediatrices des segment (p1, p2) et (p2, p3)   
 
     void calculer_center(); // calculer le centre du cercle circonscrit au triangle

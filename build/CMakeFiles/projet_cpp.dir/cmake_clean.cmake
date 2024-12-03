@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/projet_cpp.dir/src/main.cpp.o"
   "CMakeFiles/projet_cpp.dir/src/main.cpp.o.d"
+  "CMakeFiles/projet_cpp.dir/src/plan.cpp.o"
+  "CMakeFiles/projet_cpp.dir/src/plan.cpp.o.d"
   "CMakeFiles/projet_cpp.dir/src/pos.cpp.o"
   "CMakeFiles/projet_cpp.dir/src/pos.cpp.o.d"
+  "CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o"
+  "CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o.d"
   "CMakeFiles/projet_cpp.dir/src/triangle.cpp.o"
   "CMakeFiles/projet_cpp.dir/src/triangle.cpp.o.d"
   "CMakeFiles/projet_cpp.dir/src/vibes.cpp.o"

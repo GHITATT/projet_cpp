@@ -5,11 +5,21 @@
 using namespace std;
 
 Triangle::Triangle() : _p1(nullptr), _p2(nullptr), _p3(nullptr), _a1(0), _a2(0), _b1(0), _b2(0), _c1(0), _c2(0), _x(0), _y(0) {
+    /*
+    _p1->link_to(_p2);
+    _p2->link_to(_p3);
+    */
+    
+
 }
 
 Triangle::Triangle(Pos* p1, Pos* p2, Pos* p3) : _p1(p1), _p2(p2), _p3(p3){
     calculer_coefficients();
     calculer_center();
+    /*
+    _p1->link_to(_p2);
+    _p2->link_to(_p3);
+    */
 }
 
 Triangle::~Triangle() {
