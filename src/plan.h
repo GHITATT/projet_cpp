@@ -29,9 +29,11 @@ public:
 
     
     vector<Pos*> _points;
-    double _x_min, _x_max, _y_min, _y_max, _z_min, _z_max;
 
-    int norm_z(double z);  
+    long double _x_min, _y_min, _z_min;
+    long double _x_max, _y_max, _z_max;
+
+    int norm_z(long double z);  
     void add_point(const Pos& p) ;
     void generatePGM(const std::string& filename);
     void compute_triangulation();

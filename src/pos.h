@@ -10,30 +10,22 @@ class Pos
 {
 public:
     Pos();
-    Pos(double lat, double lon, double alt);  
+    Pos(long double lat, long double lon, long double alt);  
     ~Pos();
 
-    double _lat;
-    double _lon;
-    double _alt;
+    long double _lat;
+    long double _lon;
+    long double _alt;
 
-    void transform_glob_loc(double lat, double lon, double alt);
+    void transform_glob_loc(long double lat, long double lon, long double alt);
 
-    double _x;
-    double _y;
-    double _z;
-/*
-    list<Edge*> _edges;
-
-    void link_to(Pos* p);
-*/
-
+    long double _x;
+    long double _y;
+    long double _z;
 
     friend std::ostream& operator<<(std::ostream& stream, const Pos& p);
     friend std::istream& operator>>(std::istream& stream, Pos& p);
-  
 
 };
-
 
 #endif // __POS_H__

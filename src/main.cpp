@@ -27,7 +27,7 @@ int read_mnt(std::string& mnt_brest) {
     // Lire chaque ligne du fichier
     while (std::getline(fin, line)) {
         std::istringstream iss(line);
-        double lat, lon, alt;
+        long double lat, lon, alt;
 
         if (!(iss >> lat >> lon >> alt)) {
             std::cerr << "Erreur de lecture à la ligne " << line_count << std::endl;
@@ -35,6 +35,7 @@ int read_mnt(std::string& mnt_brest) {
         }
 
         Pos* p = new Pos(lat, lon, alt);
+
         points.push_back(p);
 
         ++line_count;
