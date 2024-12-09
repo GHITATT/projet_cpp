@@ -111,24 +111,10 @@ CMakeFiles/projet_cpp.dir/src/plan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projet_cpp.dir/src/plan.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghita/Documents/C++/projet_cpp/src/plan.cpp -o CMakeFiles/projet_cpp.dir/src/plan.cpp.s
 
-CMakeFiles/projet_cpp.dir/src/triangle.cpp.o: CMakeFiles/projet_cpp.dir/flags.make
-CMakeFiles/projet_cpp.dir/src/triangle.cpp.o: ../src/triangle.cpp
-CMakeFiles/projet_cpp.dir/src/triangle.cpp.o: CMakeFiles/projet_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projet_cpp.dir/src/triangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projet_cpp.dir/src/triangle.cpp.o -MF CMakeFiles/projet_cpp.dir/src/triangle.cpp.o.d -o CMakeFiles/projet_cpp.dir/src/triangle.cpp.o -c /home/ghita/Documents/C++/projet_cpp/src/triangle.cpp
-
-CMakeFiles/projet_cpp.dir/src/triangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projet_cpp.dir/src/triangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghita/Documents/C++/projet_cpp/src/triangle.cpp > CMakeFiles/projet_cpp.dir/src/triangle.cpp.i
-
-CMakeFiles/projet_cpp.dir/src/triangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projet_cpp.dir/src/triangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghita/Documents/C++/projet_cpp/src/triangle.cpp -o CMakeFiles/projet_cpp.dir/src/triangle.cpp.s
-
 CMakeFiles/projet_cpp.dir/src/vibes.cpp.o: CMakeFiles/projet_cpp.dir/flags.make
 CMakeFiles/projet_cpp.dir/src/vibes.cpp.o: ../src/vibes.cpp
 CMakeFiles/projet_cpp.dir/src/vibes.cpp.o: CMakeFiles/projet_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projet_cpp.dir/src/vibes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projet_cpp.dir/src/vibes.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projet_cpp.dir/src/vibes.cpp.o -MF CMakeFiles/projet_cpp.dir/src/vibes.cpp.o.d -o CMakeFiles/projet_cpp.dir/src/vibes.cpp.o -c /home/ghita/Documents/C++/projet_cpp/src/vibes.cpp
 
 CMakeFiles/projet_cpp.dir/src/vibes.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/projet_cpp.dir/src/vibes.cpp.s: cmake_force
 CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o: CMakeFiles/projet_cpp.dir/flags.make
 CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o: ../src/proj_class.cpp
 CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o: CMakeFiles/projet_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o -MF CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o.d -o CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o -c /home/ghita/Documents/C++/projet_cpp/src/proj_class.cpp
 
 CMakeFiles/projet_cpp.dir/src/proj_class.cpp.i: cmake_force
@@ -153,14 +139,58 @@ CMakeFiles/projet_cpp.dir/src/proj_class.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projet_cpp.dir/src/proj_class.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghita/Documents/C++/projet_cpp/src/proj_class.cpp -o CMakeFiles/projet_cpp.dir/src/proj_class.cpp.s
 
+CMakeFiles/projet_cpp.dir/src/tree.cpp.o: CMakeFiles/projet_cpp.dir/flags.make
+CMakeFiles/projet_cpp.dir/src/tree.cpp.o: ../src/tree.cpp
+CMakeFiles/projet_cpp.dir/src/tree.cpp.o: CMakeFiles/projet_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/projet_cpp.dir/src/tree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projet_cpp.dir/src/tree.cpp.o -MF CMakeFiles/projet_cpp.dir/src/tree.cpp.o.d -o CMakeFiles/projet_cpp.dir/src/tree.cpp.o -c /home/ghita/Documents/C++/projet_cpp/src/tree.cpp
+
+CMakeFiles/projet_cpp.dir/src/tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projet_cpp.dir/src/tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghita/Documents/C++/projet_cpp/src/tree.cpp > CMakeFiles/projet_cpp.dir/src/tree.cpp.i
+
+CMakeFiles/projet_cpp.dir/src/tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projet_cpp.dir/src/tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghita/Documents/C++/projet_cpp/src/tree.cpp -o CMakeFiles/projet_cpp.dir/src/tree.cpp.s
+
+CMakeFiles/projet_cpp.dir/src/node.cpp.o: CMakeFiles/projet_cpp.dir/flags.make
+CMakeFiles/projet_cpp.dir/src/node.cpp.o: ../src/node.cpp
+CMakeFiles/projet_cpp.dir/src/node.cpp.o: CMakeFiles/projet_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/projet_cpp.dir/src/node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projet_cpp.dir/src/node.cpp.o -MF CMakeFiles/projet_cpp.dir/src/node.cpp.o.d -o CMakeFiles/projet_cpp.dir/src/node.cpp.o -c /home/ghita/Documents/C++/projet_cpp/src/node.cpp
+
+CMakeFiles/projet_cpp.dir/src/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projet_cpp.dir/src/node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghita/Documents/C++/projet_cpp/src/node.cpp > CMakeFiles/projet_cpp.dir/src/node.cpp.i
+
+CMakeFiles/projet_cpp.dir/src/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projet_cpp.dir/src/node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghita/Documents/C++/projet_cpp/src/node.cpp -o CMakeFiles/projet_cpp.dir/src/node.cpp.s
+
+CMakeFiles/projet_cpp.dir/src/triangle.cpp.o: CMakeFiles/projet_cpp.dir/flags.make
+CMakeFiles/projet_cpp.dir/src/triangle.cpp.o: ../src/triangle.cpp
+CMakeFiles/projet_cpp.dir/src/triangle.cpp.o: CMakeFiles/projet_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/projet_cpp.dir/src/triangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projet_cpp.dir/src/triangle.cpp.o -MF CMakeFiles/projet_cpp.dir/src/triangle.cpp.o.d -o CMakeFiles/projet_cpp.dir/src/triangle.cpp.o -c /home/ghita/Documents/C++/projet_cpp/src/triangle.cpp
+
+CMakeFiles/projet_cpp.dir/src/triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projet_cpp.dir/src/triangle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ghita/Documents/C++/projet_cpp/src/triangle.cpp > CMakeFiles/projet_cpp.dir/src/triangle.cpp.i
+
+CMakeFiles/projet_cpp.dir/src/triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projet_cpp.dir/src/triangle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ghita/Documents/C++/projet_cpp/src/triangle.cpp -o CMakeFiles/projet_cpp.dir/src/triangle.cpp.s
+
 # Object files for target projet_cpp
 projet_cpp_OBJECTS = \
 "CMakeFiles/projet_cpp.dir/src/main.cpp.o" \
 "CMakeFiles/projet_cpp.dir/src/pos.cpp.o" \
 "CMakeFiles/projet_cpp.dir/src/plan.cpp.o" \
-"CMakeFiles/projet_cpp.dir/src/triangle.cpp.o" \
 "CMakeFiles/projet_cpp.dir/src/vibes.cpp.o" \
-"CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o"
+"CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o" \
+"CMakeFiles/projet_cpp.dir/src/tree.cpp.o" \
+"CMakeFiles/projet_cpp.dir/src/node.cpp.o" \
+"CMakeFiles/projet_cpp.dir/src/triangle.cpp.o"
 
 # External object files for target projet_cpp
 projet_cpp_EXTERNAL_OBJECTS =
@@ -168,16 +198,15 @@ projet_cpp_EXTERNAL_OBJECTS =
 projet_cpp: CMakeFiles/projet_cpp.dir/src/main.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/src/pos.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/src/plan.cpp.o
-projet_cpp: CMakeFiles/projet_cpp.dir/src/triangle.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/src/vibes.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/src/proj_class.cpp.o
+projet_cpp: CMakeFiles/projet_cpp.dir/src/tree.cpp.o
+projet_cpp: CMakeFiles/projet_cpp.dir/src/node.cpp.o
+projet_cpp: CMakeFiles/projet_cpp.dir/src/triangle.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/build.make
 projet_cpp: /usr/lib/x86_64-linux-gnu/libtbb.so.12.5
-projet_cpp: /usr/lib/x86_64-linux-gnu/libgmpxx.so
-projet_cpp: /usr/lib/x86_64-linux-gnu/libmpfr.so
-projet_cpp: /usr/lib/x86_64-linux-gnu/libgmp.so
 projet_cpp: CMakeFiles/projet_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable projet_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable projet_cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projet_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

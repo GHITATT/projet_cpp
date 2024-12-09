@@ -6,6 +6,7 @@
 #include "triangle.h"
 #include "plan.h"
 #include "proj_class.cpp"
+#include <sstream>
 
 using namespace std;
 
@@ -75,8 +76,6 @@ int main() {
 
     // Créer et utiliser l'objet Plan
     Plan plan(points);
-    plan.compute_triangulation();
-    //plan.draw();
     plan.generatePGM("mnt_brest.pgm");
 
     // Nettoyage final de PROJ

@@ -14,10 +14,6 @@ pkg_check_modules(PROJ REQUIRED proj)
 include_directories(${PROJ_INCLUDE_DIRS})
 link_directories(${PROJ_LIBRARY_DIRS})
 
-# Trouver et inclure CGAL
-find_package(CGAL REQUIRED)
-include(${CGAL_USE_FILE})
-
 # Trouver et inclure TBB
 find_package(TBB REQUIRED)
 
@@ -25,19 +21,23 @@ find_package(TBB REQUIRED)
 configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest.txt ${CMAKE_BINARY_DIR}/src/mnt_brest.txt COPYONLY)
 configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest_proj.txt ${CMAKE_BINARY_DIR}/src/mnt_brest_proj.txt COPYONLY)
 
+set(DELAUNATOR_SOURCES external/delaunator-cpp/include/delaunator.hpp)
+
 # Liste des fichiers source
 set(SOURCE_FILES
     src/main.cpp
     src/pos.cpp
     src/plan.cpp
-    src/triangle.cpp
     src/vibes.cpp
     src/proj_class.cpp
+    src/tree.cpp
+    src/node.cpp
+    src/triangle.cpp
 )
 
 # Création de l'exécutable
-add_executable(projet_cpp ${SOURCE_FILES})
+add_executable(projet_cpp ${SOURCE_FILES} ${DELAUNATOR_SOURCES})
 
 # Lier l'exécutable avec les bibliothèques nécessaires
-target_link_libraries(projet_cpp ${PROJ_LIBRARIES} CGAL TBB::tbb)
+target_link_libraries(projet_cpp ${PROJ_LIBRARIES} TBB::tbb)
 

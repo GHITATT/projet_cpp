@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/node.o: src/node.cpp.o
+.PHONY : src/node.o
+
+# target to build an object file
+src/node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/node.cpp.o
+.PHONY : src/node.cpp.o
+
+src/node.i: src/node.cpp.i
+.PHONY : src/node.i
+
+# target to preprocess a source file
+src/node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/node.cpp.i
+.PHONY : src/node.cpp.i
+
+src/node.s: src/node.cpp.s
+.PHONY : src/node.s
+
+# target to generate assembly for a file
+src/node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/node.cpp.s
+.PHONY : src/node.cpp.s
+
 src/plan.o: src/plan.cpp.o
 .PHONY : src/plan.o
 
@@ -225,6 +249,30 @@ src/proj_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/proj_class.cpp.s
 .PHONY : src/proj_class.cpp.s
 
+src/tree.o: src/tree.cpp.o
+.PHONY : src/tree.o
+
+# target to build an object file
+src/tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/tree.cpp.o
+.PHONY : src/tree.cpp.o
+
+src/tree.i: src/tree.cpp.i
+.PHONY : src/tree.i
+
+# target to preprocess a source file
+src/tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/tree.cpp.i
+.PHONY : src/tree.cpp.i
+
+src/tree.s: src/tree.cpp.s
+.PHONY : src/tree.s
+
+# target to generate assembly for a file
+src/tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projet_cpp.dir/build.make CMakeFiles/projet_cpp.dir/src/tree.cpp.s
+.PHONY : src/tree.cpp.s
+
 src/triangle.o: src/triangle.cpp.o
 .PHONY : src/triangle.o
 
@@ -285,6 +333,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/node.o"
+	@echo "... src/node.i"
+	@echo "... src/node.s"
 	@echo "... src/plan.o"
 	@echo "... src/plan.i"
 	@echo "... src/plan.s"
@@ -294,6 +345,9 @@ help:
 	@echo "... src/proj_class.o"
 	@echo "... src/proj_class.i"
 	@echo "... src/proj_class.s"
+	@echo "... src/tree.o"
+	@echo "... src/tree.i"
+	@echo "... src/tree.s"
 	@echo "... src/triangle.o"
 	@echo "... src/triangle.i"
 	@echo "... src/triangle.s"
