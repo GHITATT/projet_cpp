@@ -19,7 +19,7 @@ find_package(TBB REQUIRED)
 
 # Copier les fichiers de données nécessaires
 configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest.txt ${CMAKE_BINARY_DIR}/src/mnt_brest.txt COPYONLY)
-configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest_proj.txt ${CMAKE_BINARY_DIR}/src/mnt_brest_proj.txt COPYONLY)
+configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest.pgm ${CMAKE_BINARY_DIR}/src/mnt_brest.pgm COPYONLY)
 
 set(DELAUNATOR_SOURCES external/delaunator-cpp/include/delaunator.hpp)
 

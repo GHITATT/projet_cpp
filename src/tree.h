@@ -10,7 +10,7 @@
 using namespace std;
 
 struct box {
-    double xmin, xmax, ymin, ymax;
+    long double xmin, xmax, ymin, ymax;
 
     bool overlaps(const box& b) {
         return xmin <= b.xmax && xmax >= b.xmin && ymin <= b.ymax && ymax >= b.ymin;
@@ -25,19 +25,19 @@ class Tree
 {
 public:
     Tree();
-    Tree(double x_min, double y_min, double x_max, double y_max, vector<int> triangles, vector<Pos*> points);
+    Tree(long double x_min, long double y_min, long double x_max, long double y_max, vector<unsigned long> triangles, vector<Pos*> points);
     ~Tree();
 
     Node* _root = nullptr;
-    double _x_min, _y_min, _x_max, _y_max;
-    vector<int> _triangles;
+    long double _x_min, _y_min, _x_max, _y_max;
+    vector<unsigned long> _triangles;
     vector<Pos*> _points;
-    double _x_center, _y_center;
+    long double _x_center, _y_center;
 
 
     bool triangle_overlaps_box(Triangle t, box b);
-    void subdivide(Node* node, int min_triangles = 5, int i = 0);
-    void search(Node* node, double x, double y, vector<int>& result);
+    void subdivide(Node* node, int min_triangles = 10, int i = 0);
+    void search(Node* node, long double x, long double y, vector<unsigned long>& result);
 };
 
 #endif // __TREE_H__    

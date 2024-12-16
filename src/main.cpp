@@ -12,6 +12,7 @@ using namespace std;
 
 std::string mnt_brest = "src/mnt_brest.txt";
 std::string mnt_brest_pgm = "src/mnt_brest.pgm";
+std::string mnt_brest_ppm = "src/mnt_brest.ppm";
 vector<Pos*> points;
 
 int read_mnt(std::string& mnt_brest) {
@@ -40,15 +41,13 @@ int read_mnt(std::string& mnt_brest) {
         points.push_back(p);
 
         ++line_count;
-        /*
-        // Limite de test (supprimez cette ligne pour traiter tout le fichier)
-        if (line_count >= 1000) {
-            break;
-        }
-        */
         
-    
+        // // Limite de test (supprimez cette ligne pour traiter tout le fichier)
+        // if (line_count >= 1000) {
+        //     break;
+        // }
         
+              
         
     }
 
@@ -76,7 +75,9 @@ int main() {
 
     // Créer et utiliser l'objet Plan
     Plan plan(points);
-    plan.generatePGM("mnt_brest.pgm");
+    //plan.generatePGM(mnt_brest_pgm);
+    plan.generatePPM(mnt_brest_ppm);
+    
 
     // Nettoyage final de PROJ
     Proj::cleanup();

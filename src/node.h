@@ -12,7 +12,7 @@ class Node
 
 public:
     Node();
-    Node(double x_min, double y_min, double x_max, double y_max, vector<int> triangles);
+    Node(double x_min, double y_min, double x_max, double y_max, vector<unsigned long> triangles);
     Node(double x_min, double y_min, double x_max, double y_max);
     ~Node();
 
@@ -20,7 +20,7 @@ public:
     Node* _child2 = nullptr;
 
     double _x_min, _y_min, _x_max, _y_max;
-    vector<int> _triangles;
+    vector<unsigned long> _triangles;
 
     double _x_center, _y_center;
 

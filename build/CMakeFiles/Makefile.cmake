@@ -11,8 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "../src/mnt_brest.pgm"
   "../src/mnt_brest.txt"
-  "../src/mnt_brest_proj.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/TBB/TBBTargets-none.cmake"
@@ -48,7 +48,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "src/mnt_brest.txt"
-  "src/mnt_brest_proj.txt"
+  "src/mnt_brest.pgm"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

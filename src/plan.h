@@ -5,6 +5,7 @@
 #include <vector>
 #include "pos.h"
 #include <limits>
+#include <fstream>
 
 using namespace std;
 
@@ -30,15 +31,16 @@ class Plan
         long double _y_max = std::numeric_limits<long double>::lowest();
         long double _z_max = std::numeric_limits<long double>::lowest();
 
-        int _width = 1500;
-        int _height = 1500;
+        int _width = 2000;
+        int _height = 2000;
 
         int norm_z(long double z);  
         void add_point(const Pos& p) ;
-        void generatePGM(const std::string& filename);
+        void generatePGM(std::string& filename);
+        void generatePPM(std::string& filename);
         void compute_triangulation();
-        double pix_to_m_x(int j);
-        double pix_to_m_y(int i);
+        long double pix_to_m_x(int j);
+        long double pix_to_m_y(int i);
         bool is_in_triangle(Pos* p1, Pos* p2, Pos* p3, Pos* p);
 
 
