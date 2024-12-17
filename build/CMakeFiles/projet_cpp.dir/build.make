@@ -205,6 +205,7 @@ projet_cpp: CMakeFiles/projet_cpp.dir/src/node.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/src/triangle.cpp.o
 projet_cpp: CMakeFiles/projet_cpp.dir/build.make
 projet_cpp: /usr/lib/x86_64-linux-gnu/libtbb.so.12.5
+projet_cpp: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 projet_cpp: CMakeFiles/projet_cpp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ghita/Documents/C++/projet_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable projet_cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projet_cpp.dir/link.txt --verbose=$(VERBOSE)

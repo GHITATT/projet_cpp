@@ -13,6 +13,7 @@
 
 using namespace std;
 
+
 Plan::Plan() :  
     _points(0)
 {}
@@ -186,6 +187,61 @@ void Plan::generatePGM(std::string& filename) {
 
 }
 
+float smoothstep(float t) {
+    return t * t * (3 - 2 * t);  // Interpolation quadratique douce
+}
+
+// Interpolation linéaire
+float lerp(float a, float b, float t) {
+    return a + t * (b - a);
+}
+
+// Fonction améliorée avec des couleurs douces
+void Plan::haxby_colormap(int value, int &r, int &g, int &b) {
+    if (value < 0) value = 0;
+    if (value > 255) value = 255;
+
+    // Points clés avec des couleurs douces
+    std::vector<std::pair<float, std::array<int, 3>>> key_colors = {
+        {0.0f, {30, 60, 120}},    // Bleu foncé doux
+        {0.25f, {70, 130, 180}},  // Bleu clair doux
+        {0.5f, {120, 180, 120}},  // Vert doux
+        {0.75f, {230, 210, 120}}, // Jaune pastel
+        {1.0f, {200, 80, 80}}     // Rouge adouci
+    };
+
+    // Normalisation de la valeur entre [0, 1]
+    float t = value / 255.0f;
+
+    // Trouver les deux points clés entourant t
+    auto it = std::lower_bound(key_colors.begin(), key_colors.end(), t, 
+        [](const std::pair<float, std::array<int, 3>> &a, float val) {
+            return a.first < val;
+        });
+
+    if (it == key_colors.begin()) {
+        r = key_colors.front().second[0];
+        g = key_colors.front().second[1];
+        b = key_colors.front().second[2];
+    } 
+    else if (it == key_colors.end()) {
+        r = key_colors.back().second[0];
+        g = key_colors.back().second[1];
+        b = key_colors.back().second[2];
+    } 
+    else {
+        auto prev = *(it - 1);
+        auto next = *it;
+
+        float local_t = (t - prev.first) / (next.first - prev.first);
+        local_t = smoothstep(local_t);  // Appliquer l'interpolation douce
+
+        r = static_cast<int>(lerp(prev.second[0], next.second[0], local_t));
+        g = static_cast<int>(lerp(prev.second[1], next.second[1], local_t));
+        b = static_cast<int>(lerp(prev.second[2], next.second[2], local_t));
+    }
+}
+
 void Plan::generatePPM(std::string& filename) {
     std::ofstream fout(filename);
     
@@ -242,6 +298,7 @@ void Plan::generatePPM(std::string& filename) {
                 
                 }
                 unsigned long min = dist[0];
+                
                 int ti = 0;
                 for (std::vector<unsigned long>::size_type k = 1; k < dist.size(); k++) {
                     if (dist[k] < min) {
@@ -259,12 +316,18 @@ void Plan::generatePPM(std::string& filename) {
                 Pos* p2 = _points[t2];
                 Pos* p3 = _points[t3];
                 
+                if (min < (_x_max - _x_min) / 100) {
+                
+                    int z = norm_z((p1->_z + p2->_z +p3->_z)/3 );
+                    int r, g, b;
 
-                int z = norm_z((p1->_z + p2->_z +p3->_z)/3 );
-                int r = z;
-                int g = 255 - z;    
-                int b = (r+g)/2;
-                fout << r << " " << g << " " << b << " ";
+                    haxby_colormap(z, r, g, b);
+                    
+
+                    fout << r << " " << g << " " << b << " ";
+                } else {
+                    fout << "0 0 0 ";
+                }
                 //cout << z << " ";
 
             // } else {

@@ -21,7 +21,12 @@ find_package(TBB REQUIRED)
 configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest.txt ${CMAKE_BINARY_DIR}/src/mnt_brest.txt COPYONLY)
 configure_file(${CMAKE_SOURCE_DIR}/src/mnt_brest.pgm ${CMAKE_BINARY_DIR}/src/mnt_brest.pgm COPYONLY)
 
-set(DELAUNATOR_SOURCES external/delaunator-cpp/include/delaunator.hpp)
+# Dépendances pour Python
+find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
+find_package(Python3 REQUIRED COMPONENTS NumPy)
+
+# Inclure les dépendances
+include_directories(${Python3_INCLUDE_DIRS})
 
 # Liste des fichiers source
 set(SOURCE_FILES
@@ -36,8 +41,13 @@ set(SOURCE_FILES
 )
 
 # Création de l'exécutable
-add_executable(projet_cpp ${SOURCE_FILES} ${DELAUNATOR_SOURCES})
+add_executable(projet_cpp ${SOURCE_FILES})
 
 # Lier l'exécutable avec les bibliothèques nécessaires
-target_link_libraries(projet_cpp ${PROJ_LIBRARIES} TBB::tbb)
+target_link_libraries(projet_cpp
+    ${PROJ_LIBRARIES}
+    TBB::tbb
+    Python3::Python
+    Python3::NumPy
+)
 

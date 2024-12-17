@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DTBB_USE_DEBUG
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /usr/include/python3.10 -isystem /home/ghita/.local/lib/python3.10/site-packages/numpy/core/include
 
 CXX_FLAGS =  -Wall -Wextra -g
 

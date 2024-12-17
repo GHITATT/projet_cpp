@@ -42,7 +42,7 @@ class Plan
         long double pix_to_m_x(int j);
         long double pix_to_m_y(int i);
         bool is_in_triangle(Pos* p1, Pos* p2, Pos* p3, Pos* p);
-
+        void haxby_colormap(int z, int& r, int& g, int& b);
 
     private:
         void compute_bounds();
